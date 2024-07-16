@@ -10,7 +10,7 @@ export async function POST(request: Request) {
  
   try {
     // Make a request to the trufflepig API using the REST API
-    const response = await fetch(`http://api.trufflepig.ai/v0/indexes/surelywork03/search?query_text=${query}`, {
+    const response = await fetch(`https://api.trufflepig.ai/v0/indexes/surelywork03/search?query_text=${query}`, {
       method: 'POST',
       headers: {
         'x-api-key': process.env.TP_API_KEY
